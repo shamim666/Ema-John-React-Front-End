@@ -8,7 +8,7 @@ const useCart = () => {
         const savedCart = getStoredCart();
         const keys = Object.keys(savedCart);
 
-        fetch('http://localhost:5000/products/bykeys',{
+        fetch('https://pacific-shore-37582.herokuapp.com/products/bykeys',{
             method:'POST',
             headers:{
                 'content-type': 'application/json'
